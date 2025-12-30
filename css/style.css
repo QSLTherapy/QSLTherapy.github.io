@@ -1,0 +1,485 @@
+/* ===== Variables ===== */
+:root {
+  --blue-dark: #0b3c5d;
+  --blue: #1b75bc;
+  --blue-light: #328cc1;
+  --gold: #ffbf00;
+  --gray-dark: #33495e;
+  --gray: #666;
+  --gray-light: #f6f6f6;
+  --white: #fff;
+  --text: #1d2731;
+  --max-width: 960px;
+}
+
+/* ===== Reset ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Base ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  color: var(--blue-dark);
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== Header ===== */
+.top-bar {
+  background: var(--blue);
+  padding: 0.5rem 0;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.top-bar a {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.top-bar nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.top-bar nav a {
+  color: var(--white);
+}
+
+.top-bar nav a:hover {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--blue-dark);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.btn:hover {
+  background: #e6ac00;
+  text-decoration: none;
+}
+
+header {
+  background: var(--blue-dark);
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+header h1 {
+  color: var(--white);
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: linear-gradient(rgba(27, 117, 188, 0.9), rgba(27, 117, 188, 0.9)),
+              url('images/4/qslt-headartboard-1-copy-1200.png') center/cover;
+  color: var(--white);
+  padding: 3rem 0;
+}
+
+.hero h2 {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.hero h2 strong {
+  font-weight: 700;
+}
+
+.hero ul {
+  margin-bottom: 2rem;
+}
+
+.hero li {
+  margin-bottom: 0.75rem;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-cta a {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.hero-cta img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ===== Member Section ===== */
+.member-bar {
+  background: var(--gray-dark);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.member-bar h3 {
+  color: var(--white);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.member-bar img {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* ===== Services Grid ===== */
+.services {
+  padding: 3rem 0;
+}
+
+.services-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.service-card {
+  text-align: center;
+  padding: 2rem;
+  background: var(--gray-light);
+  border-radius: 8px;
+}
+
+.service-card h2 {
+  color: var(--blue-dark);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card h3 {
+  color: var(--blue-dark);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+.service-card .note {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--gray);
+}
+
+.service-card .btn-link {
+  color: var(--blue-light);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* ===== CTA Section ===== */
+.cta {
+  background: var(--gray-dark);
+  color: var(--white);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.cta h2 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.cta .btn {
+  background: var(--white);
+  color: var(--blue-dark);
+}
+
+.cta .btn:hover {
+  background: var(--gray-light);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: var(--gray-light);
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer h3 {
+  color: var(--blue-light);
+  margin-bottom: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.contact-item img {
+  width: 24px;
+  height: auto;
+}
+
+.contact-item a {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.footer-bottom a {
+  color: var(--gray);
+}
+
+.social-link {
+  color: var(--blue-dark);
+  font-weight: 700;
+}
+
+/* ===== About Page ===== */
+.page-header {
+  background: var(--blue-dark);
+  color: var(--white);
+  padding: 2rem 0;
+}
+
+.page-header h1 {
+  color: var(--white);
+  margin: 0;
+}
+
+.content {
+  padding: 3rem 0;
+}
+
+.content h2 {
+  margin-top: 2rem;
+}
+
+.content h2:first-child {
+  margin-top: 0;
+}
+
+/* ===== FAQs ===== */
+.faqs {
+  padding: 3rem 0;
+  border-top: 2px solid var(--gray-light);
+}
+
+.faq {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.faq:last-child {
+  border-bottom: none;
+}
+
+.faq h3 {
+  color: var(--blue);
+}
+
+/* ===== Dogs Page ===== */
+.dog-section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.dog-section:last-child {
+  border-bottom: none;
+}
+
+.dog-section h2 {
+  color: var(--blue);
+}
+
+/* ===== Contact Page ===== */
+.contact-hero {
+  background: linear-gradient(rgba(11, 60, 93, 0.85), rgba(11, 60, 93, 0.85)),
+              url('images/e/contactus-bg-1200.jpg') center/cover;
+  color: var(--white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-hero p {
+  font-size: 1.25rem;
+}
+
+.contact-info-grid {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.contact-method h3 {
+  color: var(--blue);
+}
+
+/* ===== Privacy Page ===== */
+.privacy-content {
+  padding: 3rem 0;
+  min-height: 50vh;
+}
+
+/* ===== Responsive ===== */
+@media (min-width: 600px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  h1 { font-size: 2.5rem; }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  .service-card h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-bar .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .top-bar nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 1.25rem;
+  }
+}
