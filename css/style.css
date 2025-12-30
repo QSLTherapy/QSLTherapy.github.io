@@ -151,7 +151,7 @@ header h1 {
 /* ===== Hero ===== */
 .hero {
   background: linear-gradient(rgba(27, 117, 188, 0.9), rgba(27, 117, 188, 0.9)),
-              url('images/4/qslt-headartboard-1-copy-1200.png') center/cover;
+              url('../images/qslt-headartboard.webp') center/cover;
   color: var(--white);
   padding: 3rem 0;
 }
@@ -404,7 +404,7 @@ footer h3 {
 /* ===== Contact Page ===== */
 .contact-hero {
   background: linear-gradient(rgba(11, 60, 93, 0.85), rgba(11, 60, 93, 0.85)),
-              url('images/e/contactus-bg-1200.jpg') center/cover;
+              url('../images/img_contact_hero-1200.webp') center/cover;
   color: var(--white);
   padding: 4rem 0;
   text-align: center;
