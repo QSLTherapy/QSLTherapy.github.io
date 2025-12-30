@@ -366,6 +366,29 @@ footer h3 {
   margin-top: 0;
 }
 
+.about-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.about-image img {
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.career-section {
+  margin-bottom: 3rem;
+}
+
+.quals-img {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 /* ===== FAQs ===== */
 .faqs {
   padding: 3rem 0;
@@ -492,6 +515,10 @@ footer h3 {
   
   .contact-info-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr auto;
   }
 }
 
